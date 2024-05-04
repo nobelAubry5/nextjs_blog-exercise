@@ -1,33 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* text-xl font-bold text-slate-600 */
+.container {
+  margin: 0 auto;
+  max-width: 28rem;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.cardContainer {
+  border: 1px solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(30 41 59 / var(--tw-border-opacity));
+  border-radius: 0.375rem;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin: 16px 0;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.paragraph {
+  font-size: 14px;
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+.lien {
+  font-size: 14px;
+  color: blue;
+  text-decoration: underline;
 }
